@@ -43,7 +43,6 @@ const newGame = () => {
   console.log(`
   Great! Here's your word:
   `);
-
   randomWord = new Word(frenchVerbs);
   randomWord.letterize();
   randomWord.blankify(frenchAlphabet);
@@ -59,6 +58,7 @@ const showStats = () => {
     Guesses left: ${guessesLeft}
     Letters guessed: ${lettersGuessed.toString()}`
   );
+  checkWinOrLose();
 };
 
 // Prompt player to guess a letter.
@@ -87,6 +87,15 @@ const promptGuess = () => {
     .catch(error => {
       console.log(error);
     });
+};
+
+// Check if player has won or lost.
+const checkWinOrLose = () => {
+  if (randomBlanks.indexOf("_") === -1 && guessesLeft > 0) {
+    console.log("Hooray, you win!");
+  } else if (guessesLeft === 0) {
+    console.log("No win this time.");
+  }
 };
 
 gameRules();
