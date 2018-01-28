@@ -74,7 +74,14 @@ const promptGuess = () => {
     .then(answer => {
       let guess = new Letter(answer);
       guess.isValid(frenchAlphabet)
-        ? guess.isCorrect(frenchAlphabet, randomWord)
+        ? (guess.checkAnswer(
+            lettersGuessed,
+            randomLetters,
+            randomBlanks,
+            guessesLeft
+          ),
+          showStats(),
+          promptGuess())
         : promptGuess();
     })
     .catch(error => {

@@ -18,7 +18,7 @@ Word.prototype.blankify = function(alphabet) {
   alphabet = alphabet || "abcdefghijklmnopqrstuvwxyz".split("");
 
   // If an item matches an item in alphabet array, add '_' to randomBlanks. Otherwise if the character is a " ", add " " to randomBlanks.
-  const randomBlanks = [];
+  randomBlanks = [];
   for (let i = 0; i < randomLetters.length; i++) {
     if (alphabet.indexOf(randomLetters[i]) !== -1) {
       randomBlanks.push("_");
@@ -27,7 +27,6 @@ Word.prototype.blankify = function(alphabet) {
     }
   }
   console.log(randomBlanks);
-  // console.log("Eligible letters:", alphabet);
 };
 
 // Export Word prototype.
