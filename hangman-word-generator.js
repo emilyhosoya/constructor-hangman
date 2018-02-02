@@ -3,8 +3,8 @@ function Word(wordList) {
   this.random = wordList[Math.floor(Math.random() * wordList.length)];
   this.word = this.random.word;
   this.definition = this.random.definition;
-  this.showWord = console.log("Word:", this.word);
-  this.showDefinition = console.log("Meaning:", this.definition);
+  // this.showWord = console.log("Word:", this.word);
+  // this.showDefinition = console.log("Meaning:", this.definition);
 }
 
 // Split the word into an array of its letters.

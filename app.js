@@ -6,7 +6,7 @@ const Letter = require("./hangman-letter-checker.js");
 
 let randomWord = {};
 let guessesLeft = 10;
-const lettersGuessed = [];
+let lettersGuessed = [];
 
 // Custom game rules or introduction.
 const gameRules = () => {
@@ -40,6 +40,9 @@ const startPrompt = () => {
 
 // When a new game starts, generate a random word.
 const newGame = () => {
+  guessesLeft = 10;
+  lettersGuessed = [];
+
   console.log(`
   Great! Here's your word:
   `);
@@ -55,10 +58,15 @@ const newGame = () => {
 const showStats = () => {
   console.log(
     `
-    Guesses left: ${guessesLeft}
-    Letters guessed: ${lettersGuessed.toString()}`
+    * Meaning: ${randomWord.definition}
+    * Guesses left: ${guessesLeft}
+    * Letters guessed: ${lettersGuessed.toString()}`
   );
-  checkWinOrLose();
+};
+
+// Decrease guesses.
+const minusGuess = () => {
+  guessesLeft--;
 };
 
 // Prompt player to guess a letter.
@@ -78,10 +86,10 @@ const promptGuess = () => {
             lettersGuessed,
             randomLetters,
             randomBlanks,
-            guessesLeft
+            minusGuess
           ),
           showStats(),
-          promptGuess())
+          checkWinOrLose())
         : promptGuess();
     })
     .catch(error => {
@@ -93,8 +101,12 @@ const promptGuess = () => {
 const checkWinOrLose = () => {
   if (randomBlanks.indexOf("_") === -1 && guessesLeft > 0) {
     console.log("Hooray, you win!");
+    startPrompt();
   } else if (guessesLeft === 0) {
     console.log("No win this time.");
+    startPrompt();
+  } else {
+    promptGuess();
   }
 };
 

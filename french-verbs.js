@@ -1,8 +1,8 @@
 const frenchVerbs = [
-  {
-    word: "être",
-    definition: "to be"
-  },
+  // {
+  //   word: "être",
+  //   definition: "to be"
+  // },
   {
     word: "avoir",
     definition: "to have"
@@ -111,10 +111,10 @@ const frenchVerbs = [
     word: "suivre",
     definition: "to follow, to pay attention"
   },
-  {
-    word: "connaître",
-    definition: "to know, to be acquainted with"
-  },
+  // {
+  //   word: "connaître",
+  //   definition: "to know, to be acquainted with"
+  // },
   {
     word: "croire",
     definition: "to believe (in)"
@@ -159,10 +159,10 @@ const frenchVerbs = [
     word: "partir",
     definition: "to leave, to depart, to proceed"
   },
-  {
-    word: "décider",
-    definition: "to decide, to persuade"
-  },
+  // {
+  //   word: "décider",
+  //   definition: "to decide, to persuade"
+  // },
   {
     word: "arriver",
     definition: "to arrive, to happen"
@@ -187,10 +187,10 @@ const frenchVerbs = [
     word: "recevoir",
     definition: "to receive, to welcome"
   },
-  {
-    word: "répondre",
-    definition: "to answer, to reply"
-  },
+  // {
+  //   word: "répondre",
+  //   definition: "to answer, to reply"
+  // },
   {
     word: "vivre",
     definition: "to live"
@@ -199,10 +199,10 @@ const frenchVerbs = [
     word: "rappeler",
     definition: "to call back, to remind"
   },
-  {
-    word: "présenter",
-    definition: "to present, to introduce"
-  },
+  // {
+  //   word: "présenter",
+  //   definition: "to present, to introduce"
+  // },
   {
     word: "accepter",
     definition: "to accept"
@@ -219,10 +219,10 @@ const frenchVerbs = [
     word: "jouer",
     definition: "to play, to act, to gamble"
   },
-  {
-    word: "reconnaître",
-    definition: "to recognize, to acknowledge"
-  },
+  // {
+  //   word: "reconnaître",
+  //   definition: "to recognize, to acknowledge"
+  // },
   {
     word: "choisir",
     definition: "to choose, to select"
@@ -247,10 +247,10 @@ const frenchVerbs = [
     word: "expliquer",
     definition: "to explain, to account for"
   },
-  {
-    word: "considérer",
-    definition: "to consider, to study"
-  },
+  // {
+  //   word: "considérer",
+  //   definition: "to consider, to study"
+  // },
   {
     word: "ouvrir",
     definition: "to open (up)"
@@ -271,10 +271,10 @@ const frenchVerbs = [
     word: "lire",
     definition: "to read"
   },
-  {
-    word: "réussir",
-    definition: "to succeed"
-  },
+  // {
+  //   word: "réussir",
+  //   definition: "to succeed"
+  // },
   {
     word: "changer",
     definition: "to change, to alter"
@@ -283,10 +283,10 @@ const frenchVerbs = [
     word: "travailler",
     definition: "to work"
   },
-  {
-    word: "représenter",
-    definition: "to represent, to depict, to portray"
-  },
+  // {
+  //   word: "représenter",
+  //   definition: "to represent, to depict, to portray"
+  // },
   {
     word: "assurer",
     definition: "to secure, to assure, to insure"
@@ -295,10 +295,10 @@ const frenchVerbs = [
     word: "essayer",
     definition: "to try, to attempt"
   },
-  {
-    word: "empêcher",
-    definition: "to prevent, to stop"
-  },
+  // {
+  //   word: "empêcher",
+  //   definition: "to prevent, to stop"
+  // },
   {
     word: "sortir",
     definition: "to go out, to leave, to exit, to come out"
@@ -331,10 +331,10 @@ const frenchVerbs = [
     word: "rencontrer",
     definition: "to meet, to encounter"
   },
-  {
-    word: "créer",
-    definition: "to create, to build"
-  },
+  // {
+  //   word: "créer",
+  //   definition: "to create, to build"
+  // },
   {
     word: "obtenir",
     definition: "to obtain, to get"
@@ -379,22 +379,22 @@ const frenchVerbs = [
     word: "produire",
     definition: "to produce"
   },
-  {
-    word: "préparer",
-    definition: "to prepare (something), to make"
-  },
+  // {
+  //   word: "préparer",
+  //   definition: "to prepare (something), to make"
+  // },
   {
     word: "relever",
     definition: "to raise, to stand up, to pick up"
   },
-  {
-    word: "écrire",
-    definition: "to write"
-  },
-  {
-    word: "défendre",
-    definition: "to defend, to stand up for, to forbid"
-  },
+  // {
+  //   word: "écrire",
+  //   definition: "to write"
+  // },
+  // {
+  //   word: "défendre",
+  //   definition: "to defend, to stand up for, to forbid"
+  // },
   {
     word: "tirer",
     definition: "to pull, to draw (curtains, sword), to fire (gun), to print"

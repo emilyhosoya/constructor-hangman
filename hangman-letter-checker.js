@@ -18,7 +18,7 @@ class Letter {
     }
   }
 
-  checkAnswer(lettersGuessed, wordLetters, wordBlanks, guessesLeft) {
+  checkAnswer(lettersGuessed, wordLetters, wordBlanks, minusGuess) {
     // for each item in randomLetters, check if it matches currentGuess
     for (let i = 0; i < wordLetters.length; i++) {
       if (this.guess === wordLetters[i]) {
@@ -27,19 +27,21 @@ class Letter {
     }
 
     if (
-      // If guess is in the wordLetters array, and is NOT in lettersGuessed.
+      // If guess is correct and not guessed already.
       wordLetters.indexOf(this.guess) !== -1 &&
       lettersGuessed.indexOf(this.guess) === -1
     ) {
       console.log("Correct guess");
       lettersGuessed.push(this.guess);
-      // Else if guess is already in lettersGessed.
+      minusGuess();
+      // If guess has already been made.
     } else if (lettersGuessed.indexOf(this.guess) !== -1) {
       console.log("You've already guessed that letter!");
+      // If guess is wrong.
     } else {
       console.log("That letter is not part of the word.");
       lettersGuessed.push(this.guess);
-      //   guessesLeft--; not working!
+      minusGuess();
     }
 
     console.log(wordBlanks);
